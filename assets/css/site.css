@@ -666,6 +666,18 @@ video {
   max-width: 48rem;
 }
 
+.max-w-xl {
+  max-width: 36rem;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
+}
+
+.max-w-4xl {
+  max-width: 56rem;
+}
+
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -910,6 +922,11 @@ video {
   line-height: 1;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -950,6 +967,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:w-\[600px\] {
+    width: 600px;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
