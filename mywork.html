@@ -1,10 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HongJaeKim | portfolio</title>
+    <link rel="stylesheet" href="./assets/css/site.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
+<header class="flex flex-row items-center justify-between px-4 sticky top-0 z-50 bg-blue-300 shadow-md">
+    <div class="flex items-center justify-center px-4 py-2">
+        <div class>
+            <img src="./assets/img/logo.png" alt="Logo" class="w-16 h-16">
+        </div>
+    </div>
+    <nav>
+        <ul class="flex gap-3 justify-center bg-blue-300 py-2">
+            <li><a href="index.html" class="text-white hover:text-blue-200">Home</a></li>
+            <li><a href="contact.html" class="text-white hover:text-blue-200">Contact</a></li>
+            <li><a href="about.html" class="text-white hover:text-blue-200">About</a></li>
+            <li><a href="projects.html" class="text-white hover:text-blue-200">Projects</a></li>
+            <li><a href="resume.html" class="text-white hover:text-blue-200">Resume</a></li>
+            <li><a href="mywork.html" class="text-white hover:text-blue-200">My Work</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section>
+        <header>
+            <h3>Ninja Api App</h3>
+        </header>
 
+        <div id="pick_api">
+            <label for="cats_api">
+                <input type="checkbox" id="cats_api" name="api" value="cats"> Cats
+            </label>
+            <label for="dogs_api">
+                <input type="checkbox" id="dogs_api" name="api" value="dogs"> Dogs
+            </label>
+        </div>
+
+        <div id="api_input_section">
+            <label for="api_input">Type API</label>
+            <input type="text" id="api_input" placeholder="type_api"/>
+        </div>
+
+        <button id="submit_button">submit</button>
+
+        <div id="response-area">
+            <div id="response_api">hi</div>
+            <div id="error_message">error</div>
+        </div>
+
+        <p>So I wandered over to give her assistance, pushed the drive eject button, out
+            popped the tray and... no disc to be seen.</p>
+
+        <footer>HongJae Kim</footer>
+    </section>
+</main>
+<footer class="flex justify-between items-center bg-slate-400 text-white px-8 py-3">
+    <section class="flex flex-row md:flex-col items-center gap-4">
+        <p class="text-sm text-center md:text-left">© Copyright 2024 HONG JAE KIM. All rights reserved.</p>
+    </section>
+    <section>
+        <ul class="flex flex-row gap-3 text-center">
+            <li><a href="https://github.com/KoreAustralian"><img src="./assets/img/gitHub.png" alt="github" class="w-12 h-12"/></a></li>
+            <li><a href="https://www.instagram.com/"><img src="./assets/img/instagram.png" alt="instagram" class="w-12 h-12"/></a></li>
+        </ul>
+    </section>
+</footer>
+<script src="./assets/js/main.js"></script>
 </body>
 </html>
