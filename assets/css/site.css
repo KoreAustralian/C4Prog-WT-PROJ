@@ -637,6 +637,10 @@ video {
   height: 100%;
 }
 
+.min-h-\[300px\] {
+  min-height: 300px;
+}
+
 .w-12 {
   width: 3rem;
 }
@@ -679,6 +683,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.items-stretch {
+  align-items: stretch;
 }
 
 .justify-center {
