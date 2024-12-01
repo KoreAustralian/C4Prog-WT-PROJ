@@ -1,10 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HongJaeKim | portfolio</title>
+    <link rel="stylesheet" href="./assets/css/site.css">
 </head>
 <body>
+<header class="flex flex-row items-center justify-between px-4 sticky top-0 z-50 bg-blue-300 shadow-md">
+    <div class="flex items-center justify-center px-4 py-2">
+        <div class>
+            <img src="./assets/img/logo.png" alt="Logo" class="w-16 h-16">
+        </div>
+    </div>
+    <nav>
+        <ul class="flex gap-3 justify-center bg-blue-300 py-2">
+            <li><a href="index.html" class="text-white hover:text-blue-200">Home</a></li>
+            <li><a href="contact.html" class="text-white hover:text-blue-200">Contact</a></li>
+            <li><a href="about.html" class="text-white hover:text-blue-200">About</a></li>
+            <li><a href="projects.html" class="text-white hover:text-blue-200">Projects</a></li>
+            <li><a href="resume.html" class="text-white hover:text-blue-200">Resume</a></li>
+            <li><a href="mywork.html" class="text-white hover:text-blue-200">My Work</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="flex justify-center py-10">
+        <div class="border-2 border-black px-4 py-4 text-5xl rounded-2xl">
+            <p>Contact Me</p>
+        </div>
+    </section>
 
+    <div class="flex flex-col md:flex-row items-center gap-10 justify-center py-10">
+        <section class="border-2 border-black space-y-7 px-10 py-10">
+            <p>Name: Hong Jae Kim</p>
+            <p>Date of Birth: 08/Apr/2003</p>
+            <p>Profession: Student</p>
+            <p class="px-2 text-center bg-blue-300 rounded-xl"><a href="https://github.com/KoreAustralian">GitHub</a></p>
+            <p class="px-2 text-center bg-blue-300 rounded-xl"><a href="https://www.facebook.com/">Facebook</a></p>
+            <p class="px-2 text-center bg-blue-300 rounded-xl"><a href="https://www.instagram.com/">Instagram</a></p>
+
+        </section>
+        <section class="flex flex-col border-2 border-black space-y-7 px-10 py-10">
+            <p class="text-xl">Contact Form</p>
+
+            <label for="name" class="block text-black font-bold">Name:</label>
+            <input type="text" id="name" name="name" class="border-blue-300 border-2 rounded-xl px-2 py-2" placeholder="Your Name">
+
+            <label for="email" class="block text-black font-bold">Email:</label>
+            <input type="text" id="email" name="email" class="border-blue-300 border-2 rounded-xl px-2 py-2" placeholder="Your email">
+
+            <label for="message" class="block text-black font-bold">Message:</label>
+            <input type="text" id="message" name="message" class="border-blue-300 border-2 rounded-xl px-2 py-2" placeholder="what's your message">
+
+            <button class="px-2 text-center bg-blue-300 rounded-xl">Send</button>
+        </section>
+    </div>
+</main>
+<footer class="flex justify-between items-center bg-slate-400 text-white px-8 py-3">
+    <section class="flex flex-row md:flex-col items-center gap-4">
+        <p class="text-sm text-center md:text-left">© Copyright 2024 HONG JAE KIM. All rights reserved.</p>
+    </section>
+    <section>
+        <ul class="flex flex-row gap-3 text-center">
+            <li><a href="https://github.com/KoreAustralian"><img src="./assets/img/gitHub.png" alt="github" class="w-12 h-12"/></a></li>
+            <li><a href="https://www.instagram.com/"><img src="./assets/img/instagram.png" alt="instagram" class="w-12 h-12"/></a></li>
+        </ul>
+    </section>
+</footer>
 </body>
 </html>
