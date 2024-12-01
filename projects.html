@@ -9,61 +9,59 @@
     <link rel="stylesheet" href="./assets/css/site.css">
 </head>
 <body>
-<header class="flex flex-row items-center justify-between px-4 sticky top-0 z-50 bg-blue-300 shadow-md">
-    <div class="flex items-center justify-center px-4 py-2">
-        <div class>
-            <img src="./assets/img/logo.png" alt="Logo" class="w-16 h-16">
+    <nav class="p-5 bg-blue-300 shadow md:flex md:items-center md:justify-between">
+        <div class="flex justify-between items-center">
+            <img src="./assets/img/logo.png" alt="Logo" class="h-10 inline">
+            <img src="./assets/img/hamburger.png" alt="hamburgerMenu" class="md:hidden block">
         </div>
-    </div>
-    <nav>
-        <ul class="flex gap-3 justify-center bg-blue-300 py-2">
-            <li><a href="index.html" class="text-white hover:text-blue-200">Home</a></li>
-            <li><a href="contact.html" class="text-white hover:text-blue-200">Contact</a></li>
-            <li><a href="about.html" class="text-white hover:text-blue-200">About</a></li>
-            <li><a href="projects.html" class="text-white hover:text-blue-200">Projects</a></li>
-            <li><a href="resume.html" class="text-white hover:text-blue-200">Resume</a></li>
-            <li><a href="mywork.html" class="text-white hover:text-blue-200">My Work</a></li>
+
+        <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-2 md:pl-0 pl-3 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+            <li class="mx-4 my-6 md:my-0"><a href="index.html" class="text-white hover:text-blue-200 duration-500">Home</a></li>
+            <li class="mx-4 my-6 md:my-0"><a href="contact.html" class="text-white hover:text-blue-200 duration-500">Contact</a></li>
+            <li class="mx-4 my-6 md:my-0"><a href="about.html" class="text-white hover:text-blue-200 duration-500">About</a></li>
+            <li class="mx-4 my-6 md:my-0"><a href="projects.html" class="text-white hover:text-blue-200 duration-500">Projects</a></li>
+            <li class="mx-4 my-6 md:my-0"><a href="resume.html" class="text-white hover:text-blue-200 duration-500">Resume</a></li>
+            <li class="mx-4 my-6 md:my-0"><a href="mywork.html" class="text-white hover:text-blue-200 duration-500">My Work</a></li>
         </ul>
     </nav>
-</header>
-<main>
-    <h1 class="flex text-3xl py-8 justify-center">Projects</h1>
-    <section class="grid grid-cols-2 gap-3 p-10">
-        <div class="flex flex-col gap-3 items-center text-center">
-            <img src="./assets/img/car_park.jpg" alt="carParkImage" class="w-full md:w-[400px] h-full md:h-[400px]">
-            <p class="text-center">Car Park Project</p>
-            <p class="p-2 text-center bg-blue-300 rounded-xl"><a href="https://github.com/KoreAustralian/ipriot-project-carpark">move to project</a></p>
-        </div>
+    <main>
+        <h1 class="flex text-3xl py-8 justify-center">Projects</h1>
+        <section class="grid grid-cols-2 gap-3 p-10">
+            <div class="flex flex-col gap-3 items-center text-center">
+                <img src="./assets/img/car_park.jpg" alt="carParkImage" class="w-full md:w-[400px] h-full md:h-[400px]">
+                <p class="text-center">Car Park Project</p>
+                <p class="p-2 text-center bg-blue-300 rounded-xl"><a href="https://github.com/KoreAustralian/ipriot-project-carpark">move to project</a></p>
+            </div>
 
-        <div class="flex flex-col gap-3 items-center text-center">
-            <img src="./assets/img/smiley.jpg" alt="smileyImage" class="w-full md:w-[400px] h-full md:h-[400px]">
-            <p class="text-center">Smiley Project</p>
-            <p class="p-2 text-center bg-blue-300 rounded-xl"><a href="https://github.com/KoreAustralian/civ-ipriot-smiley">move to project</a></p>
-        </div>
+            <div class="flex flex-col gap-3 items-center text-center">
+                <img src="./assets/img/smiley.jpg" alt="smileyImage" class="w-full md:w-[400px] h-full md:h-[400px]">
+                <p class="text-center">Smiley Project</p>
+                <p class="p-2 text-center bg-blue-300 rounded-xl"><a href="https://github.com/KoreAustralian/civ-ipriot-smiley">move to project</a></p>
+            </div>
 
-        <div class="flex flex-col gap-3 items-center text-center">
-            <img src="./assets/img/tictactoe.jpg" alt="ticTacToeImage" class="w-full md:w-[400px] h-full md:h-[400px]">
-            <p class="text-center">Tic Tac Toe Project</p>
-            <p class="p-2 text-center bg-blue-300 rounded-xl"><a href="https://github.com/NM-TAFE/portfolio-por-part-1-modularisation-and-2d-structures-KoreAustralian">move to project</a></p>
-        </div>
+            <div class="flex flex-col gap-3 items-center text-center">
+                <img src="./assets/img/tictactoe.jpg" alt="ticTacToeImage" class="w-full md:w-[400px] h-full md:h-[400px]">
+                <p class="text-center">Tic Tac Toe Project</p>
+                <p class="p-2 text-center bg-blue-300 rounded-xl"><a href="https://github.com/NM-TAFE/portfolio-por-part-1-modularisation-and-2d-structures-KoreAustralian">move to project</a></p>
+            </div>
 
-        <div class="flex flex-col gap-3 items-center text-center">
-            <img src="assets/img/webTechPortfolio.jpg" alt="webTechImage" class="w-full md:w-[400px] h-full md:h-[400px]">
-            <p class="text-center">Web Tech Portfolio</p>
-            <p class="p-2 text-center bg-blue-300 rounded-xl"><a href="https://dev.screencraft.net.au/~kimhong/">Move to Project</a></p>
-        </div>
-    </section>
-</main>
-<footer class="flex justify-between items-center bg-slate-400 text-white px-8 py-3">
-    <section class="flex flex-row md:flex-col items-center gap-4">
-        <p class="text-sm text-center md:text-left">© Copyright 2024 HONG JAE KIM. All rights reserved.</p>
-    </section>
-    <section>
-        <ul class="flex flex-row gap-3 text-center">
-            <li><a href="https://github.com/KoreAustralian"><img src="./assets/img/gitHub.png" alt="github" class="w-12 h-12"/></a></li>
-            <li><a href="https://www.instagram.com/"><img src="./assets/img/instagram.png" alt="instagram" class="w-12 h-12"/></a></li>
-        </ul>
-    </section>
-</footer>
+            <div class="flex flex-col gap-3 items-center text-center">
+                <img src="assets/img/webTechPortfolio.jpg" alt="webTechImage" class="w-full md:w-[400px] h-full md:h-[400px]">
+                <p class="text-center">Web Tech Portfolio</p>
+                <p class="p-2 text-center bg-blue-300 rounded-xl"><a href="https://dev.screencraft.net.au/~kimhong/">Move to Project</a></p>
+            </div>
+        </section>
+    </main>
+    <footer class="flex justify-between items-center bg-slate-400 text-white px-8 py-3">
+        <section class="flex flex-row md:flex-col items-center gap-4">
+            <p class="text-sm text-center md:text-left">© Copyright 2024 HONG JAE KIM. All rights reserved.</p>
+        </section>
+        <section>
+            <ul class="flex flex-row gap-3 text-center">
+                <li><a href="https://github.com/KoreAustralian"><img src="./assets/img/gitHub.png" alt="github" class="w-12 h-12"/></a></li>
+                <li><a href="https://www.instagram.com/"><img src="./assets/img/instagram.png" alt="instagram" class="w-12 h-12"/></a></li>
+            </ul>
+        </section>
+    </footer>
 </body>
 </html>
