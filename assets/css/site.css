@@ -999,6 +999,11 @@ video {
     text-align: left;
   }
 
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .md\:opacity-100 {
     opacity: 1;
   }
